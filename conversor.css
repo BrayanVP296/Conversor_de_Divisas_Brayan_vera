@@ -9,35 +9,24 @@ body {
     height: 100vh;
 }
 
-
-{
-    font-family: "Inter", Arial, sans-serif;
-    background: linear-gradient(180deg, #0a1a70, #e7f0ff);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 /* ===== CONTENEDOR PRINCIPAL ===== */
-.container {
-    background: white;
+.converter {
+    background: rgba(255, 255, 255, 0.9);
     padding: 40px;
     width: 480px;
     border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
     text-align: center;
-    animation: fadeIn 0.4s ease;
+    animation: fadeIn 0.4s ease-in-out;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
+    from { opacity: 0; transform: translateY(15px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-h1 {
+/* ===== TÍTULO ===== */
+h2 {
     margin-bottom: 25px;
     color: #00237d;
     font-size: 32px;
@@ -60,26 +49,41 @@ input:focus {
     box-shadow: 0 0 8px rgba(0, 102, 255, 0.3);
 }
 
-/* ===== SELECTS ===== */
-select {
+/* ===== FILA DE SELECTS ===== */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+
+/* ===== SELECTS CON BANDERAS ===== */
+select.flag-select {
     width: 45%;
     padding: 14px;
     border-radius: 14px;
     border: 2px solid #d6d6d6;
     font-size: 16px;
     outline: none;
+    background-color: white;
     transition: 0.2s;
 }
 
-select:focus {
+select.flag-select:focus {
     border-color: #0066ff;
     box-shadow: 0 0 8px rgba(0, 102, 255, 0.3);
 }
 
-/* Icono de intercambio */
-.swap {
-    font-size: 26px;
+select.flag-select option {
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+/* ===== FLECHA DE INTERCAMBIO ===== */
+.arrow {
+    font-size: 28px;
     margin: 0 12px;
+    font-weight: bold;
     color: #0036a3;
 }
 
@@ -87,12 +91,12 @@ select:focus {
 button {
     margin-top: 25px;
     width: 70%;
-    padding: 16px;
+    padding: 18px;
     font-size: 20px;
     background: #0077ff;
     color: white;
     border: none;
-    border-radius: 14px;
+    border-radius: 16px;
     cursor: pointer;
     font-weight: bold;
     transition: background 0.2s, transform 0.15s;
@@ -108,10 +112,11 @@ button:active {
 }
 
 /* ===== RESULTADO ===== */
-.resultado {
+#result {
     margin-top: 25px;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     color: #001d63;
 }
+
 

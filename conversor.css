@@ -1,6 +1,9 @@
+/* =========================================================
+   ESTILOS GENERALES
+========================================================= */
 body {
     font-family: "Inter", Arial, sans-serif;
-    backgroundcolor:rgba(220,220,220);
+    background-color: rgb(57, 47, 47);
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,35 +12,46 @@ body {
     height: 100vh;
 }
 
-/* ===== CONTENEDOR PRINCIPAL ===== */
-.converter {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 40px;
-    width: 480px;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    animation: fadeIn 0.4s ease-in-out;
-}
-
-.imgmundo{
-    margin-left: 90px;
-    margin-top: 20px; 
-}
+/* Animación general */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(15px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== TÍTULO ===== */
-h2 {
-    margin-bottom: 25px;
-    color: #00237d;
-    font-size: 32px;
-    font-weight: 800;
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+========================================================= */
+.converter {
+    background: rgba(224, 223, 205, 0.9);
+    padding: 150px;
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.4s ease-in-out;
 }
 
-/* ===== INPUT DE CANTIDAD ===== */
+.imgmundo {
+    margin-right: 250px;
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   TEXTO Y TÍTULOS
+========================================================= */
+h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+    margin-top: -35%;
+    color: #123d6c;
+}
+
+
+/* =========================================================
+   INPUTS GENERALES
+========================================================= */
 input {
     width: 80%;
     padding: 14px;
@@ -53,7 +67,10 @@ input:focus {
     box-shadow: 0 0 8px rgba(0, 102, 255, 0.3);
 }
 
-/* ===== FILA DE SELECTS ===== */
+
+/* =========================================================
+   SELECTS Y FILAS
+========================================================= */
 .row {
     display: flex;
     justify-content: center;
@@ -61,15 +78,14 @@ input:focus {
     margin-top: 18px;
 }
 
-/* ===== SELECTS CON BANDERAS ===== */
 select.flag-select {
     width: 45%;
     padding: 14px;
-    border-radius: 14px;
     border: 2px solid #d6d6d6;
+    border-radius: 14px;
     font-size: 16px;
+    background-color: #fff;
     outline: none;
-    background-color: white;
     transition: 0.2s;
 }
 
@@ -83,7 +99,10 @@ select.flag-select option {
     font-size: 16px;
 }
 
-/* ===== FLECHA DE INTERCAMBIO ===== */
+
+/* =========================================================
+   FLECHA DE INTERCAMBIO
+========================================================= */
 .arrow {
     font-size: 28px;
     margin: 0 12px;
@@ -91,14 +110,17 @@ select.flag-select option {
     color: #0036a3;
 }
 
-/* ===== BOTÓN PRINCIPAL ===== */
+
+/* =========================================================
+   BOTÓN PRINCIPAL
+========================================================= */
 button {
     margin-top: 25px;
     width: 70%;
     padding: 18px;
     font-size: 20px;
     background: #0077ff;
-    color: white;
+    color: #fff;
     border: none;
     border-radius: 16px;
     cursor: pointer;
@@ -115,15 +137,16 @@ button:active {
     transform: scale(0.98);
 }
 
-/* ===== RESULTADO ===== */
+
+/* =========================================================
+   RESULTADO
+========================================================= */
 #result {
     margin-top: 25px;
     font-size: 26px;
     font-weight: bold;
     color: #001d63;
 }
-
-
 
 
 
